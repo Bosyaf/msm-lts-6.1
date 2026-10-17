@@ -33,3 +33,9 @@ source "Documentation/Kconfig"
 
 # ANDROID: Set KCONFIG_EXT_PREFIX to decend into an external project.
 source "$(KCONFIG_EXT_PREFIX)Kconfig.ext"
+
+source "techpack/wlan/cnss2/Kconfig"
+source "techpack/wlan/cnss_utils/Kconfig"
+source "techpack/wlan/cnss_prealloc/Kconfig"
+source "techpack/wlan/cnss_genl/Kconfig"
+source "techpack/wlan/icnss2/Kconfig"
