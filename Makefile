@@ -1254,7 +1254,7 @@ ifeq ($(KBUILD_EXTMOD),)
 endif
 	$(Q)$(MAKE) $(hdr-inst)=$(hdr-prefix)include/uapi
 	$(Q)$(MAKE) $(hdr-inst)=$(hdr-prefix)arch/$(SRCARCH)/include/uapi
-    $(Q)for d in $(techpack-dirs); do \
+	$(Q)for d in $(techpack-dirs); do \
 		$(MAKE) $(hdr-inst)=$$d/include/uapi; \
 	done
 
